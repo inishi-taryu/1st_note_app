@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メモ帳</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1>メモ帳</h1>
+        <div class="input-container">
+            <input type="text" id="title" placeholder="見出しを入力"><br>
+            <textarea id="memo" rows="4" placeholder="ここにメモを入力してください"></textarea>
+        </div>
+        <div class="memo-display" id="memoDisplay"></div>
+        <span class="notice"></span>
+        <button onclick="saveMemo()">保存</button>
+        <button onclick="clearMemo()">全削除</button>
+        <div class="memo-list" id="memoList"></div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
